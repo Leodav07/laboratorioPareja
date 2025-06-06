@@ -18,13 +18,17 @@ public class memoramaJuego {
    private JButton boton1, boton2;
    private Casillas casilla1, casilla2;
    private boolean esperarSeleccion;
-   
+   int contador = 10;
     public memoramaJuego(int filas, int columnas){
+        
         row = filas;
         column = columnas;
         tabla = new Casillas[filas][columnas];
         esperarSeleccion = false;
         casillasAleatorias();
+        System.out.println("Memorama iniciado: "+filas+ "x"+columnas);
+        
+        System.out.println("Intento: "+contador);
     }
     
     private void mezclar(Casillas[] arregloTem){
@@ -42,9 +46,9 @@ public class memoramaJuego {
         Casillas[] casillasTemporal = new Casillas[36];
         
         for (int i = 0; i < 18; i++) {
-            String ruta = "images/imagen_"+i+".png";
-            casillasTemporal[i*2] = new Casillas(ruta);
-            casillasTemporal[i*2+1]= new Casillas(ruta);
+            String ruta = "/images/imagen_"+i+".png";
+            casillasTemporal[i*2] = new Casillas(i, ruta);
+            casillasTemporal[i*2+1]= new Casillas(i, ruta);
         }
         mezclar(casillasTemporal);
         for (int i = 0; i < 6; i++) {
@@ -57,6 +61,7 @@ public class memoramaJuego {
     }
     
     public void seleccionDeCasilla(int fila, int columna, JButton button){
+        System.out.println("Carta seleccionada: ["+fila+"]["+columna+"]");
         Casillas casilla = tabla[fila][columna];
         
         if(casilla.volteado() || casilla.encontrado()){
@@ -82,16 +87,19 @@ public class memoramaJuego {
     }
     
     private void verificacion(){
-        if(casilla1.getRuta().equals(casilla2.getRuta())){
+        if(casilla1.getId() == casilla2.getId()){
             casilla1.cartaEncontrada();
             casilla2.cartaEncontrada();
             boton1.setBackground(Color.GREEN);
             boton2.setBackground(Color.GREEN);
         }else{
+            
+            contador--;
             casilla1.voltearRevesCarta();
             casilla2.voltearRevesCarta();
             ocultar(boton1);
             ocultar(boton2);
+            System.out.println("Intento Fallido");
         }
         boton1 = null;
         boton2 = null;
@@ -104,7 +112,7 @@ public class memoramaJuego {
             button.setIcon(casilla.getImagen());
             button.setText("");
         }else{
-            button.setText(String.valueOf(casilla.getRuta()));
+            button.setText(String.valueOf(casilla.getId()));
         }
                 
     }

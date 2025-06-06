@@ -11,12 +11,13 @@ import static java.awt.Image.*;
  * @author hnleo
  */
 public class Casillas {
-    
+    private int id;
     private String ruta;
     private ImageIcon imagen;
     private boolean voltear, encontrado;
     
-    public Casillas(String ruta){
+    public Casillas(int id,String ruta){
+        this.id = id;
         this.ruta = ruta;
         voltear = false;
         encontrado = false;
@@ -24,10 +25,27 @@ public class Casillas {
     }
     
     private void imagenCasilla(){
-        ImageIcon casillaImagen = new ImageIcon(ruta);
-        imagen = new ImageIcon(casillaImagen.getImage().getScaledInstance(100, 100, SCALE_SMOOTH));
+        try {
+            // Intentar cargar desde resources
+            java.net.URL imgURL = getClass().getResource(ruta);
+            if (imgURL != null) {
+                imagen = new ImageIcon(imgURL);
+            } else {
+                // Intentar cargar desde archivo
+                imagen = new ImageIcon(ruta);
+                if (imagen.getIconWidth() == -1) {
+                    System.out.println("No se pudo cargar la imagen: " + ruta);
+                    imagen = null;
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Error al cargar imagen " + ruta + ": " + e.getMessage());
+            imagen = null;
+        }
     }
-    
+    public int getId(){
+        return id;
+    }
     public String getRuta(){
         return ruta;
     }

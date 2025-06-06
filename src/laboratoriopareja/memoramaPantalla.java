@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package laboratoriopareja;
+import java.awt.*;
+import javax.swing.*;
 
 /**
  *
@@ -17,10 +19,65 @@ public class memoramaPantalla extends javax.swing.JFrame {
         initComponents();
         iniciar();
     }
-   
+    private memoramaJuego inicio;
+    private JButton buttons[][];
     private void iniciar(){
-        memoramaJuego inicio = new memoramaJuego(6, 6);
+        inicio = new memoramaJuego(6, 6);
+        botonesArreglo();
+    }
+    
+    private void botonesArreglo(){
+        buttons = new JButton[6][6];
+        buttons[0][0] = boton1_0;
+        buttons[0][1] = boton1_1;
+        buttons[0][2] = boton1_2;
+        buttons[0][3] = boton1_3;
+        buttons[0][4] = boton1_4;
+        buttons[0][5] = boton1_5;
+        buttons[1][0] = boton2_0;
+        buttons[1][1] = boton2_1;
+        buttons[1][2] = boton2_2;
+        buttons[1][3] = boton2_3;
+        buttons[1][4] = boton2_4;
+        buttons[1][5] = boton2_5;
+        buttons[2][0] = boton3_0;
+        buttons[2][1] = boton3_1;
+        buttons[2][2] = boton3_2;
+        buttons[2][3] = boton3_3;
+        buttons[2][4] = boton3_4;
+        buttons[2][5] = boton3_5;
+        buttons[3][0] = boton4_0;
+        buttons[3][1] = boton4_1;
+        buttons[3][2] = boton4_2;
+        buttons[3][3] = boton4_3;
+        buttons[3][4] = boton4_4;
+        buttons[3][5] = boton4_5;
+        buttons[4][0] = boton5_0;
+        buttons[4][1] = boton5_1;
+        buttons[4][2] = boton5_2;
+        buttons[4][3] = boton5_3;
+        buttons[4][4] = boton5_4;
+        buttons[4][5] = boton5_5;
+        buttons[5][0] = boton6_0;
+        buttons[5][1] = boton6_1;
+        buttons[5][2] = boton6_2;
+        buttons[5][3] = boton6_3;
+        buttons[5][4] = boton6_4;
+        buttons[5][5] = boton6_5;
         
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                final int row = i;
+                final int column = j;
+                buttons[i][j].addActionListener(e -> clics(row, column));
+                buttons[i][j].setText("");
+                buttons[i][j].setEnabled(true);
+                
+            }
+        }
+    }
+    private void clics(int row, int column){
+       inicio.seleccionDeCasilla(row, column, buttons[row][column]);
     }
     /**
      * This method is called from within the constructor to initialize the form.
