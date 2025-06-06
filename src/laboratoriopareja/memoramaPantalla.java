@@ -79,6 +79,10 @@ public class memoramaPantalla extends javax.swing.JFrame {
     }
     private void clics(int row, int column){
        inicio.seleccionDeCasilla(row, column, buttons[row][column]);
+       
+       if(inicio.finalJuego()){
+           JOptionPane.showMessageDialog(this, "Completaste el Juego, ¡Felicidades!");
+       }
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -136,7 +140,7 @@ public class memoramaPantalla extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(600, 700));
         setResizable(false);
 
-        tableroPanel.setBackground(new java.awt.Color(255, 255, 204));
+        tableroPanel.setBackground(new java.awt.Color(255, 239, 230));
         tableroPanel.setMaximumSize(new java.awt.Dimension(600, 600));
         tableroPanel.setMinimumSize(new java.awt.Dimension(600, 600));
         tableroPanel.setLayout(new java.awt.GridLayout(6, 6));

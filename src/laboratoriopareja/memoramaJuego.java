@@ -122,6 +122,15 @@ public class memoramaJuego {
         button.setText("");
     }
     
-    
+    public boolean finalJuego(){
+        for (int fila = 0; fila < row; fila++) {
+            for (int columna = 0; columna < column; column++) {
+                if (!tabla[fila][columna].encontrado()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
     
 }
