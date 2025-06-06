@@ -15,8 +15,13 @@ public class memoramaPantalla extends javax.swing.JFrame {
      */
     public memoramaPantalla() {
         initComponents();
+        iniciar();
     }
-
+   
+    private void iniciar(){
+        memoramaJuego inicio = new memoramaJuego(6, 6);
+        
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

@@ -24,6 +24,7 @@ public class memoramaJuego {
         column = columnas;
         tabla = new Casillas[filas][columnas];
         esperarSeleccion = false;
+        casillasAleatorias();
     }
     
     private void mezclar(Casillas[] arregloTem){
@@ -55,4 +56,27 @@ public class memoramaJuego {
         
     }
     
+    public void seleccionDeCasilla(int fila, int columna, JButton button){
+        Casillas casilla = tabla[fila][columna];
+        
+        if(casilla.volteado() || casilla.encontrado()){
+            return;
+        }
+        
+        casilla.voltearCarta();
+        
+        if(esperarSeleccion){
+            boton2 = button;
+            casilla2 = casilla;
+            esperarSeleccion = false;
+            Timer cooldown = new Timer(1000,)
+             cooldown.setRepeats(false);
+             cooldown.start();
+        }else{
+            boton1 = button;
+            casilla1 = casilla;
+            esperarSeleccion = true;
+        }
+        
+    }
 }
