@@ -81,7 +81,8 @@ public class memoramaPantalla extends javax.swing.JFrame {
        inicio.seleccionDeCasilla(row, column, buttons[row][column]);
        
        if(inicio.finalJuego()){
-           JOptionPane.showMessageDialog(this, "Completaste el Juego, ¡Felicidades!");
+           JOptionPane.showMessageDialog(this, "Intentos Máximos alcanzados.");
+          
        }
     }
     /**

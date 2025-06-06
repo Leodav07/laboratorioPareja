@@ -123,14 +123,10 @@ public class memoramaJuego {
     }
     
     public boolean finalJuego(){
-        for (int fila = 0; fila < row; fila++) {
-            for (int columna = 0; columna < column; column++) {
-                if (!tabla[fila][columna].encontrado()) {
-                    return false;
-                }
-            }
+        if(contador<=0){
+            return true;
         }
-        return true;
+        return false;
     }
     
 }
