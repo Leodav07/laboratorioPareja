@@ -64,14 +64,15 @@ public class memoramaJuego {
         }
         
         casilla.voltearCarta();
+        mostrar(casilla, button);
         
         if(esperarSeleccion){
             boton2 = button;
             casilla2 = casilla;
             esperarSeleccion = false;
-            Timer cooldown = new Timer(1000,)
-             cooldown.setRepeats(false);
-             cooldown.start();
+          Timer cooldown = new Timer(1000, e-> verificacion());
+            cooldown.setRepeats(false);
+            cooldown.start();
         }else{
             boton1 = button;
             casilla1 = casilla;
@@ -79,4 +80,39 @@ public class memoramaJuego {
         }
         
     }
+    
+    private void verificacion(){
+        if(casilla1.getRuta().equals(casilla2.getRuta())){
+            casilla1.cartaEncontrada();
+            casilla2.cartaEncontrada();
+            boton1.setBackground(Color.GREEN);
+            boton2.setBackground(Color.GREEN);
+        }else{
+            casilla1.voltearRevesCarta();
+            casilla2.voltearRevesCarta();
+            ocultar(boton1);
+            ocultar(boton2);
+        }
+        boton1 = null;
+        boton2 = null;
+        casilla1 = null;
+        casilla2 = null;
+    }
+    
+    private void mostrar(Casillas casilla, JButton button){
+        if(casilla.getImagen() != null){
+            button.setIcon(casilla.getImagen());
+            button.setText("");
+        }else{
+            button.setText(String.valueOf(casilla.getRuta()));
+        }
+                
+    }
+    private void ocultar(JButton button){
+        button.setIcon(null);
+        button.setText("");
+    }
+    
+    
+    
 }
