@@ -92,9 +92,10 @@ public class memoramaJuego {
             casilla2.cartaEncontrada();
             boton1.setBackground(Color.GREEN);
             boton2.setBackground(Color.GREEN);
+            System.out.println("Intento: "+contador);
         }else{
-            
             contador--;
+            System.out.println("Intento: "+contador);
             casilla1.voltearRevesCarta();
             casilla2.voltearRevesCarta();
             ocultar(boton1);
