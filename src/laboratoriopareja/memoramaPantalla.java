@@ -27,6 +27,42 @@ public class memoramaPantalla extends javax.swing.JFrame {
     private void initComponents() {
 
         tableroPanel = new javax.swing.JPanel();
+        boton1_0 = new javax.swing.JButton();
+        boton1_1 = new javax.swing.JButton();
+        boton1_2 = new javax.swing.JButton();
+        boton1_3 = new javax.swing.JButton();
+        boton1_4 = new javax.swing.JButton();
+        boton1_5 = new javax.swing.JButton();
+        boton2_0 = new javax.swing.JButton();
+        boton2_1 = new javax.swing.JButton();
+        boton2_2 = new javax.swing.JButton();
+        boton2_3 = new javax.swing.JButton();
+        boton2_4 = new javax.swing.JButton();
+        boton2_5 = new javax.swing.JButton();
+        boton3_0 = new javax.swing.JButton();
+        boton3_1 = new javax.swing.JButton();
+        boton3_2 = new javax.swing.JButton();
+        boton3_3 = new javax.swing.JButton();
+        boton3_4 = new javax.swing.JButton();
+        boton3_5 = new javax.swing.JButton();
+        boton4_0 = new javax.swing.JButton();
+        boton4_1 = new javax.swing.JButton();
+        boton4_2 = new javax.swing.JButton();
+        boton4_3 = new javax.swing.JButton();
+        boton4_4 = new javax.swing.JButton();
+        boton4_5 = new javax.swing.JButton();
+        boton5_0 = new javax.swing.JButton();
+        boton5_1 = new javax.swing.JButton();
+        boton5_2 = new javax.swing.JButton();
+        boton5_3 = new javax.swing.JButton();
+        boton5_4 = new javax.swing.JButton();
+        boton5_5 = new javax.swing.JButton();
+        boton6_0 = new javax.swing.JButton();
+        boton6_1 = new javax.swing.JButton();
+        boton6_2 = new javax.swing.JButton();
+        boton6_3 = new javax.swing.JButton();
+        boton6_4 = new javax.swing.JButton();
+        boton6_5 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -40,17 +76,55 @@ public class memoramaPantalla extends javax.swing.JFrame {
         tableroPanel.setBackground(new java.awt.Color(255, 255, 204));
         tableroPanel.setMaximumSize(new java.awt.Dimension(600, 600));
         tableroPanel.setMinimumSize(new java.awt.Dimension(600, 600));
+        tableroPanel.setLayout(new java.awt.GridLayout(6, 6));
+        tableroPanel.add(boton1_0);
+        tableroPanel.add(boton1_1);
+        tableroPanel.add(boton1_2);
+        tableroPanel.add(boton1_3);
 
-        javax.swing.GroupLayout tableroPanelLayout = new javax.swing.GroupLayout(tableroPanel);
-        tableroPanel.setLayout(tableroPanelLayout);
-        tableroPanelLayout.setHorizontalGroup(
-            tableroPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
-        );
-        tableroPanelLayout.setVerticalGroup(
-            tableroPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
-        );
+        boton1_4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boton1_4ActionPerformed(evt);
+            }
+        });
+        tableroPanel.add(boton1_4);
+        tableroPanel.add(boton1_5);
+        tableroPanel.add(boton2_0);
+        tableroPanel.add(boton2_1);
+        tableroPanel.add(boton2_2);
+        tableroPanel.add(boton2_3);
+        tableroPanel.add(boton2_4);
+        tableroPanel.add(boton2_5);
+        tableroPanel.add(boton3_0);
+        tableroPanel.add(boton3_1);
+        tableroPanel.add(boton3_2);
+        tableroPanel.add(boton3_3);
+        tableroPanel.add(boton3_4);
+        tableroPanel.add(boton3_5);
+        tableroPanel.add(boton4_0);
+        tableroPanel.add(boton4_1);
+        tableroPanel.add(boton4_2);
+        tableroPanel.add(boton4_3);
+        tableroPanel.add(boton4_4);
+        tableroPanel.add(boton4_5);
+        tableroPanel.add(boton5_0);
+        tableroPanel.add(boton5_1);
+        tableroPanel.add(boton5_2);
+        tableroPanel.add(boton5_3);
+        tableroPanel.add(boton5_4);
+        tableroPanel.add(boton5_5);
+        tableroPanel.add(boton6_0);
+        tableroPanel.add(boton6_1);
+
+        boton6_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boton6_2ActionPerformed(evt);
+            }
+        });
+        tableroPanel.add(boton6_2);
+        tableroPanel.add(boton6_3);
+        tableroPanel.add(boton6_4);
+        tableroPanel.add(boton6_5);
 
         getContentPane().add(tableroPanel, java.awt.BorderLayout.CENTER);
 
@@ -90,6 +164,14 @@ public class memoramaPantalla extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void boton1_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton1_4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_boton1_4ActionPerformed
+
+    private void boton6_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton6_2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_boton6_2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -126,6 +208,42 @@ public class memoramaPantalla extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton boton1_0;
+    private javax.swing.JButton boton1_1;
+    private javax.swing.JButton boton1_2;
+    private javax.swing.JButton boton1_3;
+    private javax.swing.JButton boton1_4;
+    private javax.swing.JButton boton1_5;
+    private javax.swing.JButton boton2_0;
+    private javax.swing.JButton boton2_1;
+    private javax.swing.JButton boton2_2;
+    private javax.swing.JButton boton2_3;
+    private javax.swing.JButton boton2_4;
+    private javax.swing.JButton boton2_5;
+    private javax.swing.JButton boton3_0;
+    private javax.swing.JButton boton3_1;
+    private javax.swing.JButton boton3_2;
+    private javax.swing.JButton boton3_3;
+    private javax.swing.JButton boton3_4;
+    private javax.swing.JButton boton3_5;
+    private javax.swing.JButton boton4_0;
+    private javax.swing.JButton boton4_1;
+    private javax.swing.JButton boton4_2;
+    private javax.swing.JButton boton4_3;
+    private javax.swing.JButton boton4_4;
+    private javax.swing.JButton boton4_5;
+    private javax.swing.JButton boton5_0;
+    private javax.swing.JButton boton5_1;
+    private javax.swing.JButton boton5_2;
+    private javax.swing.JButton boton5_3;
+    private javax.swing.JButton boton5_4;
+    private javax.swing.JButton boton5_5;
+    private javax.swing.JButton boton6_0;
+    private javax.swing.JButton boton6_1;
+    private javax.swing.JButton boton6_2;
+    private javax.swing.JButton boton6_3;
+    private javax.swing.JButton boton6_4;
+    private javax.swing.JButton boton6_5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;

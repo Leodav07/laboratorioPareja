@@ -11,6 +11,7 @@ import static java.awt.Image.*;
  * @author hnleo
  */
 public class Casillas {
+    
     private String ruta;
     private ImageIcon imagen;
     private boolean voltear, encontrado;
@@ -19,6 +20,7 @@ public class Casillas {
         this.ruta = ruta;
         voltear = false;
         encontrado = false;
+        imagenCasilla();
     }
     
     private void imagenCasilla(){
@@ -36,7 +38,16 @@ public class Casillas {
         return voltear;
     }
     public boolean encontrado(){
-        return encontrado
+        return encontrado;
+    }
+    public void voltearCarta(){
+        voltear = true;
+    }
+    public void voltearRevesCarta(){
+        voltear = false;
+    }
+    public void cartaEncontrada(){
+        encontrado = true;
     }
             
 }

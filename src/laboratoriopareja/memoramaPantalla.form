@@ -51,18 +51,90 @@
         </Constraint>
       </Constraints>
 
-      <Layout>
-        <DimensionLayout dim="0">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="600" max="32767" attributes="0"/>
-          </Group>
-        </DimensionLayout>
-        <DimensionLayout dim="1">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="600" max="32767" attributes="0"/>
-          </Group>
-        </DimensionLayout>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="6"/>
+        <Property name="rows" type="int" value="6"/>
       </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="boton1_0">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton1_1">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton1_2">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton1_3">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton1_4">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton1_4ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="boton1_5">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton2_0">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton2_1">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton2_2">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton2_3">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton2_4">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton2_5">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton3_0">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton3_1">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton3_2">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton3_3">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton3_4">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton3_5">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton4_0">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton4_1">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton4_2">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton4_3">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton4_4">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton4_5">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton5_0">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton5_1">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton5_2">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton5_3">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton5_4">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton5_5">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton6_0">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton6_1">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton6_2">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton6_2ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="boton6_3">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton6_4">
+        </Component>
+        <Component class="javax.swing.JButton" name="boton6_5">
+        </Component>
+      </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
