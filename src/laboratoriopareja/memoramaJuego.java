@@ -8,7 +8,7 @@ package laboratoriopareja;
  *
  * @author hnleo
  */
-public class LaboratorioPareja {
+public class memoramaJuego {
 
     /**
      * @param args the command line arguments
